@@ -13,22 +13,10 @@
 // // // import Swiper from 'swiper';
 // // // import Swiper from 'another-package';
 
-// // import React from 'react';
-// // import './Testimonial.css';
-// // import { Swiper, SwiperSlide } from 'swiper/react';
-// // import { Pagination } from 'swiper'; // Import Pagination separately
-// // import profilePic1 from '../../img/profile1.jpg';
-// // import profilePic2 from '../../img/profile2.jpg';
-// // import profilePic3 from '../../img/profile3.jpg';
-// // import profilePic4 from '../../img/profile4.jpg';
-// // import 'swiper/css'; // Import Swiper styles
-// // import 'swiper/css/pagination'; // Import Swiper pagination styles
-
-
 // import React from 'react';
 // import './Testimonial.css';
 // import { Swiper, SwiperSlide } from 'swiper/react';
-// import SwiperCore, { Pagination } from 'swiper/core'; // Import SwiperCore and Pagination
+// import { Pagination } from 'swiper'; // Import Pagination separately
 // import profilePic1 from '../../img/profile1.jpg';
 // import profilePic2 from '../../img/profile2.jpg';
 // import profilePic3 from '../../img/profile3.jpg';
@@ -36,7 +24,19 @@
 // import 'swiper/css'; // Import Swiper styles
 // import 'swiper/css/pagination'; // Import Swiper pagination styles
 
-// SwiperCore.use([Pagination]); // Enable Pagination
+
+// // import React from 'react';
+// // import './Testimonial.css';
+// // import { Swiper, SwiperSlide } from 'swiper/react';
+// // import SwiperCore, { Pagination } from 'swiper/core'; // Import SwiperCore and Pagination
+// // import profilePic1 from '../../img/profile1.jpg';
+// // import profilePic2 from '../../img/profile2.jpg';
+// // import profilePic3 from '../../img/profile3.jpg';
+// // import profilePic4 from '../../img/profile4.jpg';
+// // import 'swiper/css'; // Import Swiper styles
+// // import 'swiper/css/pagination'; // Import Swiper pagination styles
+
+// // SwiperCore.use([Pagination]); // Enable Pagination
 
 
 // function Testimonial() {
