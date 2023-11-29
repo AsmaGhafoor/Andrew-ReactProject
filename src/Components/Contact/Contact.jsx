@@ -3,7 +3,7 @@ import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { themeContext } from '../../Context'
-import { useContext } from 'react';
+import { useContext } from 'react'
 
 
 function Contact() {

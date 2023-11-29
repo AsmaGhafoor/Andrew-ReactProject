@@ -8,7 +8,7 @@ import profilePic4 from '../../img/profile4.jpg'
 // import { Pagination } from "swiper"
 import "swiper/css/pagination"
 import 'swiper/css'
-import { Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules'
 
 
 function Testimonial() {
@@ -32,7 +32,7 @@ function Testimonial() {
     ]
 
     return (
-        <div className='t-wrapper'>
+        <div className='t-wrapper' id='Testimonials'>
             <div className="t-heading">
                 <span>Clients always get </span>
                 <span>Exceptional Work </span>

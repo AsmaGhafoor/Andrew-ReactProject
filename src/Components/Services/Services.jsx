@@ -6,15 +6,19 @@ import Humble from '../../img/humble.png'
 import Cards from '../Cards/Card'
 import DummyResume from '../Services/DummyResume.pdf'
 import { themeContext } from '../../Context'
-import { useContext } from 'react';
+import { useContext } from 'react'
+import { motion } from 'framer-motion'
+
 
 function Services() {
+    const transition = { duration: 1, type: 'spring' }
+
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode;
 
     return (
         <div>
-            <div className="services">
+            <div className="services" id='Services'>
                 {/* left side */}
                 <div className="awesome">
                     <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
@@ -34,31 +38,43 @@ function Services() {
                 {/* right side */}
                 <div className="cards">
                     {/* First Card */}
-                    <div style={{ left: '14rem' }}>
+                    <motion.div
+                        initial={{ left: '25rem' }}
+                        whileInView={{ left: '14rem' }}
+                        transition={transition}
+                        style={{ left: '14rem' }}>
                         <Cards
                             emoji={HeartEmoji}
                             heading={'Design'}
                             detail={"Figma, Sketch, Photoshop, Adobe xd"}
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Second Card */}
-                    <div style={{ left: '-4rem', top: '12rem' }}>
+                    <motion.div
+                        // initial={{ left: '12rem' }}
+                        // whileInView={{ left: '-4rem' }}
+                        // transition={transition}
+                        style={{ left: '-4rem', top: '12rem' }}>
                         <Cards
                             emoji={Glasses}
                             heading={'Developer'}
-                            detail={"Html, CSS, JavaScript, React"}
+                            detail={"Html, CSS, JavaScript, ReactJS, NodeJS"}
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Third Card */}
-                    <div style={{ left: '12rem', top: '19rem' }}>
+                    <motion.div
+                        initial={{ left: '12rem' }}
+                        whileInView={{ left: '19rem' }}
+                        transition={transition}
+                        style={{ left: '12rem', top: '19rem' }}>
                         <Cards
                             emoji={Humble}
                             heading={'Mern Stack'}
                             detail={"React, MongoDB, Express Js, Node Js"}
                         />
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>
