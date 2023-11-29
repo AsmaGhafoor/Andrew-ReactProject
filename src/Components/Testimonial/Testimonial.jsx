@@ -11,7 +11,6 @@ import 'swiper/css'
 import { Pagination } from 'swiper/modules';
 
 
-
 function Testimonial() {
     const clients = [
         {
@@ -35,8 +34,8 @@ function Testimonial() {
     return (
         <div className='t-wrapper'>
             <div className="t-heading">
-                <span>Clients always get</span>
-                <span>Exceptional Work</span>
+                <span>Clients always get </span>
+                <span>Exceptional Work </span>
                 <span>from me...</span>
                 <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
                 <div className="blur blur-2" style={{ background: "skyblue" }}></div>
@@ -52,8 +51,10 @@ function Testimonial() {
                 {clients.map((client, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <img src={client.img} alt="clientImg" />
-                            <span>{client.review}</span>
+                            <div className="testimonial">
+                                <img src={client.img} alt="clientImg" />
+                                <span>{client.review}</span>
+                            </div>
                         </SwiperSlide>
                     )
                 })}
