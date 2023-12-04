@@ -39,9 +39,9 @@ function Services() {
                 <div className="cards">
                     {/* First Card */}
                     <motion.div
-                        initial={{ left: '25rem' }}
-                        whileInView={{ left: '14rem' }}
-                        transition={transition}
+                        // initial={{ left: '25rem' }}
+                        // whileInView={{ left: '14rem' }}
+                        // transition={transition}
                         style={{ left: '14rem' }}>
                         <Cards
                             emoji={HeartEmoji}
@@ -65,9 +65,9 @@ function Services() {
 
                     {/* Third Card */}
                     <motion.div
-                        initial={{ left: '12rem' }}
-                        whileInView={{ left: '19rem' }}
-                        transition={transition}
+                        // initial={{ left: '12rem' }}
+                        // whileInView={{ left: '19rem' }}
+                        // transition={transition}
                         style={{ left: '12rem', top: '19rem' }}>
                         <Cards
                             emoji={Humble}

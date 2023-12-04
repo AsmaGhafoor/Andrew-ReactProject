@@ -31,10 +31,10 @@ function Work() {
             {/* Right Side */}
             <div className="w-right">
                 <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: '-40px' }}
-                    transition={{ duration: 3.5, type: 'spring' }}
+                    // initial={{ rotate: 45 }}
+                    // whileInView={{ rotate: 0 }}
+                    // viewport={{ margin: '-40px' }}
+                    // transition={{ duration: 3.5, type: 'spring' }}
 
                     className="w-mainCircle">
                     <div className="w-secCircle">
